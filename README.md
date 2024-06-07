@@ -1,10 +1,8 @@
-# Setup
+# Mage learning project
 
-1. Clone repo:
+This repository contains the personal work done to learn Mage, as part of the 2024 cohort of the MLOps Zoomcap organized by the DataTalks.Club community.The repo is a fork of the template provided by the Mage team at https://github.com/mage-ai/mlops.
 
-   ```
-   git clone https://github.com/mage-ai/mlops.git
-   ```
+## Start mage
 
 1. Change directory into the cloned repo:
 
@@ -12,10 +10,11 @@
    cd mlops
    ```
 
-1. Launch Mage and the database service (PostgreSQL):
+2. Launch Mage and the database service (PostgreSQL):
 
    ```
    ./scripts/start.sh
    ```
+   The script sets some environmental variables and launches docker compose, which builds and starts the containers for Mage and a PostgreSQL database.
 
-1. Open [`http://localhost:6789`](http://localhost:6789) in your browser.
+3. Open [`http://localhost:6789`](http://localhost:6789) in your browser to access Mage.
