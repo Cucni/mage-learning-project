@@ -1,0 +1,50 @@
+blocks:
+  my_shap_bar_chart:
+    configuration:
+      chart_type: custom
+    data_source:
+      block_uuid: dashboard_chart_data
+      pipeline_schedule_id: null
+      pipeline_uuid: xgboost_train
+      type: block
+    error: null
+    name: My SHAP bar chart
+    name_new: My SHAP bar chart
+    skip_render: false
+    type: chart
+    uuid: my_shap_bar_chart
+  my_shap_force_plot:
+    configuration:
+      chart_type: custom
+    data_source:
+      block_uuid: dashboard_chart_data
+      pipeline_schedule_id: null
+      pipeline_uuid: xgboost_train
+      type: block
+    error: null
+    name: My SHAP force plot
+    name_new: My SHAP force plot
+    skip_render: false
+    type: chart
+    uuid: my_shap_force_plot
+  my_shap_values:
+    configuration:
+      chart_type: custom
+    data_source:
+      block_uuid: dashboard_chart_data
+      pipeline_schedule_id: null
+      pipeline_uuid: xgboost_train
+      type: block
+    error: null
+    name: My SHAP values
+    skip_render: false
+    type: chart
+    uuid: my_shap_values
+layout:
+- - block_uuid: my_shap_bar_chart
+    height: 0
+    width: 1
+  - block_uuid: my_shap_values
+    width: 1
+- - block_uuid: my_shap_force_plot
+    width: 1

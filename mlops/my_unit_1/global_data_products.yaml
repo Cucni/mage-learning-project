@@ -1,0 +1,21 @@
+my_training_set:
+  object_type: pipeline
+  object_uuid: data_preparation
+  outdated_after:
+    seconds: 600
+  project: my_unit_1
+  repo_path: /home/src/mlops/my_unit_1
+  settings:
+    build:
+      partitions: 1
+xgboost_best_model:
+  object_type: pipeline
+  object_uuid: xgboost_train
+  outdated_after:
+    seconds: 86400
+  outdated_starting_at:
+    hour_of_day: 12
+  project: my_unit_1
+  repo_path: /home/src/mlops/my_unit_1
+  settings:
+    xgboost_best_model: {}

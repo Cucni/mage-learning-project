@@ -1,0 +1,6 @@
+blocks:
+  inference:
+  - name: Make predictions without code actions
+    uuid: playground.yaml
+layout: []
+permissions: []

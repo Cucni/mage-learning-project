@@ -1,0 +1,14 @@
+triggers:
+- description: null
+  envs: []
+  last_enabled_at: 2024-06-06 14:48:33.487345+00:00
+  name: Prediction API trigger
+  pipeline_uuid: predict
+  schedule_interval: null
+  schedule_type: api
+  settings: null
+  sla: null
+  start_time: 2024-06-06 14:47:00+00:00
+  status: active
+  token: 1097a4127e5e40f48fd2cc3da18d8f07
+  variables: {}
