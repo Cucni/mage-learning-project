@@ -1,4 +1,6 @@
 projects:
+  homework_03:
+    path: homework_03
   my_unit_1:
     path: my_unit_1
   unit_0_setup: {}

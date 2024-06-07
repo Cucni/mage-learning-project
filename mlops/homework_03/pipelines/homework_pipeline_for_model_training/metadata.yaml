@@ -1,0 +1,100 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: homework_03/data_loaders/ingest_data.py
+  downstream_blocks:
+  - clean_data
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: ingest_data
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: ingest_data
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: homework_03/transformers/clean_data.py
+  downstream_blocks:
+  - train_linear_regression
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: clean_data
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - ingest_data
+  uuid: clean_data
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: homework_03/transformers/train_linear_regression.py
+  downstream_blocks:
+  - log_model
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: train_linear_regression
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - clean_data
+  uuid: train_linear_regression
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: homework_03/data_exporters/log_model.py
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: log_model
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - train_linear_regression
+  uuid: log_model
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2024-06-07 11:00:21.624334+00:00'
+data_integration: null
+description: Loading and preparing Yellow Taxi data for March 2023, then training
+  and loggin a linear regression model
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: Homework pipeline for model training
+notification_config: {}
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: python
+uuid: homework_pipeline_for_model_training
+variables_dir: /home/src/mage_data/homework_03
+widgets: []
