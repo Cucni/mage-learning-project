@@ -1,0 +1,14 @@
+triggers:
+- description: null
+  envs: []
+  last_enabled_at: 2024-06-07 17:10:26.528413+00:00
+  name: Predictions API
+  pipeline_uuid: best_model_api
+  schedule_interval: null
+  schedule_type: api
+  settings: null
+  sla: null
+  start_time: 2024-06-07 17:05:00+00:00
+  status: active
+  token: 5bf2ddf00edc4dad8b265c694bbc6455
+  variables: {}
